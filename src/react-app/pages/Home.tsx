@@ -3,18 +3,18 @@ import { MessageCircle, Truck, Shield, CreditCard, ChevronLeft, ChevronRight, Ch
 
 // Product colors data with image URLs
 const colors = [
-  { id: "black", name: "أسود", file: "black.png", url: "https://019c7c2b-dffe-7c97-af52-4e1342e8b1e7.mochausercontent.com/black.png" },
-  { id: "blue-pink", name: "أزرق وردي", file: "blue-piink.png", url: null },
-  { id: "clear-blue", name: "أزرق شفاف", file: "clear-blue.png", url: null },
-  { id: "clear-brown", name: "بني شفاف", file: "clear-brown.png", url: null },
-  { id: "clear-green", name: "أخضر شفاف", file: "clear-green.png", url: null },
-  { id: "clear-pink", name: "وردي شفاف", file: "clear-pink.png", url: null },
-  { id: "clear-purple", name: "بنفسجي شفاف", file: "clear-purple.png", url: null },
-  { id: "gra-black", name: "رمادي أسود", file: "gra-black.png", url: "https://019c7c2b-dffe-7c97-af52-4e1342e8b1e7.mochausercontent.com/gra-black.png" },
-  { id: "gra-brown", name: "رمادي بني", file: "gra-brown.png", url: "https://019c7c2b-dffe-7c97-af52-4e1342e8b1e7.mochausercontent.com/gra-brown.png" },
-  { id: "red", name: "أحمر", file: "red.png", url: null },
-  { id: "transparent", name: "شفاف", file: "transparent.png", url: "https://019c7c2b-dffe-7c97-af52-4e1342e8b1e7.mochausercontent.com/transparent.png" },
-  { id: "yellow", name: "أصفر", file: "yello.png", url: "https://019c7c2b-dffe-7c97-af52-4e1342e8b1e7.mochausercontent.com/yello.png" },
+  { id: "black", name: "أسود", file: "black.webp", url: "https://019c7c2b-dffe-7c97-af52-4e1342e8b1e7.mochausercontent.com/black.webp" },
+  { id: "blue-pink", name: "أزرق وردي", file: "blue-piink.webp", url: null },
+  { id: "clear-blue", name: "أزرق شفاف", file: "clear-blue.webp", url: null },
+  { id: "clear-brown", name: "بني شفاف", file: "clear-brown.webp", url: null },
+  { id: "clear-green", name: "أخضر شفاف", file: "clear-green.webp", url: null },
+  { id: "clear-pink", name: "وردي شفاف", file: "clear-pink.webp", url: null },
+  { id: "clear-purple", name: "بنفسجي شفاف", file: "clear-purple.webp", url: null },
+  { id: "gra-black", name: "رمادي أسود", file: "gra-black.webp", url: "https://019c7c2b-dffe-7c97-af52-4e1342e8b1e7.mochausercontent.com/gra-black.webp" },
+  { id: "gra-brown", name: "رمادي بني", file: "gra-brown.webp", url: "https://019c7c2b-dffe-7c97-af52-4e1342e8b1e7.mochausercontent.com/gra-brown.webp" },
+  { id: "red", name: "أحمر", file: "red.webp", url: null },
+  { id: "transparent", name: "شفاف", file: "transparent.webp", url: "https://019c7c2b-dffe-7c97-af52-4e1342e8b1e7.mochausercontent.com/transparent.webp" },
+  { id: "yellow", name: "أصفر", file: "yello.webp", url: "https://019c7c2b-dffe-7c97-af52-4e1342e8b1e7.mochausercontent.com/yello.webp" },
 ];
 
 // Customer reviews
@@ -99,10 +99,10 @@ export default function Home() {
       name: formData.name,
       phone: formData.phone,
       address: formData.address,
-      pack: packType === "single" ? "زوج واحد - 150 DH" : "زوجين - 229 DH",
+      pack: packType === "single" ? "زوج واحد - 149 DH" : "زوجين - 229 DH",
       color1: colors.find(c => c.id === formData.color)?.name,
       color2: packType === "double" ? colors.find(c => c.id === formData.color2)?.name : "-",
-      total: packType === "single" ? "150 DH" : "229 DH",
+      total: packType === "single" ? "149 DH" : "229 DH",
     };
 
     try {
@@ -200,7 +200,7 @@ export default function Home() {
   
   <div className="relative overflow-hidden rounded-3xl border border-[#D4AF37]/30 shadow-2xl shadow-[#D4AF37]/10 bg-[#1a1a1a]">
     <img
-      src="/hero.jpg"
+      src="/hero.webp"
       alt="Premium Rimless Sunglasses"
       className="w-full aspect-[4/3] md:aspect-video object-cover transition-transform duration-700 hover:scale-105"
       loading="eager"
@@ -209,7 +209,7 @@ export default function Home() {
 
   {/* Price Badge */}
   <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#D4AF37] to-[#F5E6A3] text-[#0f0f0f] px-8 py-2.5 rounded-full font-bold text-lg shadow-xl border border-white/20 whitespace-nowrap z-10">
-    ابتداءً من 150 DH
+    ابتداءً من 149 DH
   </div>
 </div>
           {/* Headline */}
@@ -563,7 +563,7 @@ export default function Home() {
                       }`}
                     >
                       <p className="font-bold">زوج واحد</p>
-                      <p className="text-[#D4AF37] font-bold text-lg">150 DH</p>
+                      <p className="text-[#D4AF37] font-bold text-lg">149 DH</p>
                     </button>
                     <button
                       type="button"
@@ -664,7 +664,7 @@ export default function Home() {
                   <p className="text-sm text-gray-400 mb-2">ملخص الطلب:</p>
                   <div className="flex justify-between items-center">
                     <span>{packType === "single" ? "زوج واحد" : "زوجين من النظارات"}</span>
-                    <span className="font-bold text-[#D4AF37]">{packType === "single" ? "150" : "229"} DH</span>
+                    <span className="font-bold text-[#D4AF37]">{packType === "single" ? "149" : "229"} DH</span>
                   </div>
                   <div className="flex justify-between items-center text-sm text-gray-500 mt-1">
                     <span>التوصيل</span>
